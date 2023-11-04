@@ -126,7 +126,7 @@ INSERT INTO DONGIA (MAHG, NGAYCN, GIA)
 VALUES
     ('HG001', '2023-10-01', 10.00),
     ('HG002', '2023-10-01', 20.00);
-----------------------------------------------
+-------------------------------------------------------------------------------------------------------------
 
 --7.3. Viết thủ tục thực hiện việc cập nhật THANHTIEN trên bảng CHITIETHD và TIENBAN trên bảng CHITIETHD.
 CREATE PROCEDURE CapNhatTienBanHoaDon
@@ -191,7 +191,10 @@ BEGIN
     WHERE H.MAHG = @MAHG;
 END;
 EXEC ThongTinHang @MAHG = 'HH001';
---7.8. Để kiểm tra một khách hàng thuộc loại nào (‘VIP’, ‘KH thành viên’, ‘KH thân--thiết’) cần viết một thủ tục truyền vào tham số mã khách hàng sẽ trả về ‘VIP’ nếu--doanh số ≥10.000.000; ‘KH thành viên’ nếu 6.000.000 ≤doanh số<10.000.000; ‘KH--thân thiết’ nếu doanh số <6.000.000 (ghi chú: Doanh số là số tiền mà khách mua hàng).
+--7.8. Để kiểm tra một khách hàng thuộc loại nào (‘VIP’, ‘KH thành viên’, ‘KH thân
+--thiết’) cần viết một thủ tục truyền vào tham số mã khách hàng sẽ trả về ‘VIP’ nếu
+--doanh số ≥10.000.000; ‘KH thành viên’ nếu 6.000.000 ≤doanh số<10.000.000; ‘KH
+--thân thiết’ nếu doanh số <6.000.000 (ghi chú: Doanh số là số tiền mà khách mua hàng).
 CREATE PROCEDURE LoaiKhachHang
     @MAKH VARCHAR(10)
 AS
