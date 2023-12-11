@@ -42,5 +42,5 @@ VALUES
     ('SV106', N'Hồ Thái',N'Hồng', '1998-11-08', '12DHTH10',N'Nữ'),
     ('SV107', N'Nguyễn Thị',N'Bảo', '1999-08-12', '12DHTH10',N'Nữ'),
     ('SV108', N'Trần Quang',N'Sơn', '2000-04-02', '12DHTH10',N'Nam'),
-    ('SV109', N'Lai Thị',N'Mai', '2001-06-19', '12DHTH10'),
+    ('SV109', N'Lai Thị',N'Mai', '2001-06-19', '12DHTH10',N'Nữ'),
     ('SV110', N'Huỳnh Thị',N'Thắm', '2002-07-21', '12DHTH10',N'Nam');
